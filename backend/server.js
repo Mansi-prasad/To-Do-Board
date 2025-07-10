@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 console.log("frontendUrl: ", process.env.FRONTEND_URL);
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL, // frontend url
+    origin: "*",
     credentials: true,
   })
 );
@@ -32,7 +32,7 @@ app.use("/api/actions", actionLogRoute);
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL,
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   },
@@ -41,6 +41,10 @@ const io = new Server(server, {
 // Setup Socket.Io logic
 setupSocket(io);
 
-server.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT} `);
-});
+if (process.env.NODE_ENV !== "production") {
+  server.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT} `);
+  });
+}
+// export server for Vercel
+export default server;
