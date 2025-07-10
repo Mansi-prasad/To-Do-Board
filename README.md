@@ -7,8 +7,7 @@ This is a real-time web application that lets users manage tasks instantly.It us
 Key goals:
 - Provide **real-time updates** without page reloads.  
 - Auto-assign tasks efficiently among users.
-- Prevent conflicts when multiple users edit the same data.
-
+- Activity Log- Shows last 20 actions; updates live
 ---
 
 ## 🛠️ Tech Stack
@@ -34,9 +33,9 @@ cd To-Do-Board
 npm install  
 
 Start the Backend Server  
-npm run server 
+- npm run server  
 Run the frontend  
-npm run dev  
+- npm run dev  
 
 ## ✨ Features List
 1. Task Management- Create, view, update and delete tasks.  
