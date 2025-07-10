@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./KanbanBoard.css";
+import "./kanbanBoard.css";
 import TaskCard from "../taskCard/Taskcard";
 
 export default function KanbanBoard({ tasks, onStatusChange }) {
