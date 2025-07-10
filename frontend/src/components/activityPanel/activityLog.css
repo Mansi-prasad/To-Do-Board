@@ -1,0 +1,53 @@
+.activity-log {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.activity-log h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.log-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.log-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.log-item:last-child {
+  border-bottom: none;
+}
+
+.log-user {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.log-action {
+  color: #555;
+}
+
+.log-task {
+  font-style: italic;
+  color: #333;
+}
+
+.log-time {
+  color: #888;
+  font-size: 0.8rem;
+}

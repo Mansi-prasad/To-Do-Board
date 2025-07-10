@@ -1,0 +1,111 @@
+.task-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: grab;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.task-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+}
+
+.status.todo {
+  background-color: #007bff;
+}
+
+.status.in-progress {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.status.done {
+  background-color: #28a745;
+}
+
+.task-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.priority-low {
+  background: #e0f7fa;
+  color: #00796b;
+}
+
+.priority-medium {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.priority-high {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.assigned {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.smart-assign-con{
+  margin-top: 10px;
+}
+.smart-assign{
+  background-color: #20cab6;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.smart-assign:hover{
+  background-color: #06cfb7;
+  cursor: pointer;
+}
+
+.done-title {
+  text-decoration: line-through;
+  color: gray;
+}

@@ -1,0 +1,159 @@
+.home-page{
+  padding: 1rem;
+  flex-wrap: wrap;
+  background-color: #f5f6fa;
+  min-height: calc(100vh - 160px); 
+}
+.home-page .btn-con{
+    display: flex;
+  justify-content: end;
+}
+.home-page .create-btn{
+  background-color: #8171bd;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.create-btn:hover{
+  background-color: #6b55bb;
+}
+.task-not-found{
+  font-size: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 1.5rem;
+  padding: 1rem;
+  /* for small screen */
+  grid-template-columns: repeat(1, 1fr);
+}
+.task-wrapper {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.task-wrapper:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Task actions styling */
+.task-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.task-actions button {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.task-actions .edit-btn{
+background: rgb(117, 180, 228);
+}
+.task-actions .delete-btn{
+background: rgb(231, 69, 82);
+}
+
+
+/* Create Task */
+
+.modal h3{
+  text-align: center;
+  font-weight: 600;
+}
+
+
+/* modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 2em;
+  border-radius: 4px;
+  width: 300px;
+}
+.modal .cancel-btn-con{
+  display: flex;
+  justify-content: end;
+}
+.modal .cancel-btn{
+  border: none;
+  font-size: 20px;
+  background-color: none;
+  cursor: pointer;
+}
+.modal .fields{
+  padding: 10px;
+  margin: 6px 0;
+  border: 1.5px solid gray;
+  outline: none;
+  border-radius: 5px;
+}
+.modal .name, .desc{
+  width: 93%;
+}
+.modal select{
+  width: 100%;
+}
+
+.modal .cancel-btn button:hover{
+  cursor: pointer;
+}
+.modal-actions {
+  display: flex;
+  gap:6px;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.task-wrapper {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
