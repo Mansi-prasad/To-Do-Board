@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./BoardPage.css";
+import "./boardPage.css";
 import KanbanBoard from "../../components/kanbanBoard/KanbanBoard";
 import ActivityLog from "../../components/activityPanel/ActivityLog";
 import {
