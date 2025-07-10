@@ -6,7 +6,6 @@ import Home from "./pages/home/Home.jsx";
 import BoardPage from "./pages/boardPage/BoardPage";
 import LoginSignup from "./pages/loginSignup/LoginSignup";
 import { Toaster } from "react-hot-toast";
-import ActivityLog from "./components/activityPanel/ActivityLog.jsx";
 const App = () => {
   return (
     <>
@@ -18,7 +17,6 @@ const App = () => {
             <Route path="/tasks" element={<Layout />}>
               <Route path="list" element={<Home />} />
               <Route path="board" element={<BoardPage />} />
-              <Route path="activity" element={<ActivityLog />} />
             </Route>
           </Routes>
         </main>

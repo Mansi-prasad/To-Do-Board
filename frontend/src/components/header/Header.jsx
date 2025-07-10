@@ -15,7 +15,6 @@ const Header = () => {
       <nav className="header-nav">
         <Link to="/tasks/list">Tasks</Link>
         <Link to="/tasks/board">Board</Link>
-        <Link to="/tasks/activity">Activity</Link>
         <button onClick={logout} className="logout-button">
           Logout <FiLogOut />
         </button>
